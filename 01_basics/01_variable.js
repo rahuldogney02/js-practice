@@ -14,3 +14,15 @@ console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
 Prefer not to use var
 because of block scop and fuctional scope
 */
+
+/*
+┌─────────┬──────────────────┐
+│ (index) │ Values           │
+├─────────┼──────────────────┤
+│ 0       │ 12344            │
+│ 1       │ 'test@gmail.com' │
+│ 2       │ 'Pass@123'       │
+│ 3       │ 'Bhopal'         │
+│ 4       │ undefined        │
+└─────────┴──────────────────┘
+*/

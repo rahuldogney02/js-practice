@@ -18,3 +18,14 @@ let isLoggedIn = false
 // object
 console.table([typeof "etst" , typeof undefined, typeof age, typeof null, typeof isLoggedIn]);
 
+/*
+┌─────────┬─────────────┐
+│ (index) │ Values      │
+├─────────┼─────────────┤
+│ 0       │ 'string'    │
+│ 1       │ 'undefined' │
+│ 2       │ 'number'    │
+│ 3       │ 'object'    │
+│ 4       │ 'boolean'   │
+└─────────┴─────────────┘
+*/
