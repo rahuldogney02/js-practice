@@ -95,22 +95,34 @@ console.log("incremet of true is 1 :-" , true , +true , -true); // true+ or fals
 console.log("decrement of false is 0 :-" , false, +false , -false);
 console.log('+"" :- ',+"");
 
+// output
+// incremet of true is 1 :- true 1 -1
+// decrement of false is 0 :- false 0 -0
+/*
+┌─────────┬────────────────────────────┐
+│ (index) │ Values                     │
+├─────────┼────────────────────────────┤
+│ 0       │ '2+2 = 4'                  │
+│ 1       │ '2-2 = 0'                  │
+│ 2       │ '2*2 = 4'                  │
+│ 3       │ '2**3 = 8'                 │
+│ 4       │ '2/3 = 0.6666666666666666' │
+│ 5       │ '2%3 = 2'                  │
+│ 6       │ 'Hello World'              │
+│ 7       │ '1+"2" = 12'               │
+└─────────┴────────────────────────────┘
+ToPrimtive (input[,preferredType])
+┌─────────┬───────────────────────────┐
+│ (index) │ Values                    │
+├─────────┼───────────────────────────┤
+│ 0       │ '1+"2" = string = 12'     │
+│ 1       │ '"2"+1+6  = string = 216' │
+│ 2       │ '"2"+1+6  = string = 101' │
+└─────────┴───────────────────────────┘
+*/
+
 let gameCounter = 101;
 ++gameCounter;
 console.log(gameCounter);
-
+// +"" :-  0
 // Refrence : https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
-
-
-
-/*
-┌─────────┬────────────┐
-│ (index) │ Values     │
-├─────────┼────────────┤
-│ 0       │ '2+2 = 4'  │
-│ 1       │ '2-2 = 0'  │
-│ 2       │ '2*2 = 4'  │
-│ 3       │ '2**3 = 8' │
-│ 4       │ '2%3 = 2'  │
-└─────────┴────────────┘
-*/
