@@ -78,3 +78,39 @@ number
 │ 2       │ 'string' │
 └─────────┴──────────┘
 */
+
+// ######################### OPERATIONS ############################
+
+let value = 3
+let neg = - value
+
+let str1 = "Hello"
+let str2 = " World"
+
+
+console.table([(`2+2 = ${2+2}`), (`2-2 = ${2-2}`), (`2*2 = ${2*2}`), (`2**3 = ${2**3}`), (`2/3 = ${2/3}`), (`2%3 = ${2%3}`),(str1+str2), (`1+"2" = ${1+"2"}`)]);
+console.log("ToPrimtive (input[,preferredType])")
+console.table([(`1+"2" = ${typeof (1+"2")} = ${1+"2"}`),(`"2"+1+6  = ${typeof ("2"+1+6)} = ${"2"+1+6}`),(`"2"+1+6  = ${typeof (1+6+3+"1")} = ${1+6+3+"1"}`)]);
+console.log("incremet of true is 1 :-" , true , +true , -true); // true+ or false+ = error
+console.log("decrement of false is 0 :-" , false, +false , -false);
+console.log('+"" :- ',+"");
+
+let gameCounter = 101;
+++gameCounter;
+console.log(gameCounter);
+
+// Refrence : https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
+
+
+
+/*
+┌─────────┬────────────┐
+│ (index) │ Values     │
+├─────────┼────────────┤
+│ 0       │ '2+2 = 4'  │
+│ 1       │ '2-2 = 0'  │
+│ 2       │ '2*2 = 4'  │
+│ 3       │ '2**3 = 8' │
+│ 4       │ '2%3 = 2'  │
+└─────────┴────────────┘
+*/
