@@ -25,3 +25,15 @@ const myFunction = function(){
 console.table([fruites, myObj, myFunction(),`'outSideTemp = null :-' ${typeof outSideTemp}`]);
 
 // Refrence - https://262.ecma-international.org/5.1/#sec-11.4.3 typerOf
+/*
+false
+bigint 3245374749384853n
+┌─────────┬─────────┬─────────┬──────────┬──────────┬─────────┬─────┬──────────────────────────────────┐
+│ (index) │ 0       │ 1       │ 2        │ 3        │ name    │ age │ Values                           │
+├─────────┼─────────┼─────────┼──────────┼──────────┼─────────┼─────┼──────────────────────────────────┤
+│ 0       │ 'apple' │ 'mango' │ 'greeps' │ 'banana' │         │     │                                  │
+│ 1       │         │         │          │          │ 'rahul' │ 34  │                                  │
+│ 2       │         │         │          │          │         │     │ 'Hello World'                    │
+│ 3       │         │         │          │          │         │     │ "'outSideTemp = null :-' object" │
+└─────────┴─────────┴─────────┴──────────┴──────────┴─────────┴─────┴──────────────────────────────────┘
+*/
