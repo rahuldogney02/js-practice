@@ -37,3 +37,41 @@ bigint 3245374749384853n
 │ 3       │         │         │          │          │         │     │ "'outSideTemp = null :-' object" │
 └─────────┴─────────┴─────────┴──────────┴──────────┴─────────┴─────┴──────────────────────────────────┘
 */
+
+
+// ########################### Stack and Heap ###########################
+
+// Stack (Primitive) it's provide a copy of delcared variable.
+// Heap (Non-Primitive) any values going into heap it's provide reference of the orignal value.
+
+// https://excalidraw.com/#json=1HhhATKnvZ28GwVOLEni4,eO8Fguo9b6_c9wjODsAa_g
+
+let myVariable = "myYouTubeChannel";
+console.log(myVariable);
+let anotherVar = myVariable;
+console.log(anotherVar);
+anotherVar = "ManasYouTuble";
+console.log(anotherVar);
+
+let userOne = {
+    email: "test@gmail.com",
+    upi: "user@ybl"
+}
+console.log(userOne.email);
+
+let userTwo = {
+    email: "rahul@gmail.com",
+    upi: "rahul@ybl"
+}
+console.log(userTwo.email);
+/*
+myYouTubeChannel
+myYouTubeChannel
+ManasYouTuble
+test@gmail.com
+rahul@gmail.com
+*/
+
+// change email value
+userOne.email = userTwo.email;
+console.log("userOne.email = userTwo.email :- ",userOne.email, userTwo.email) // it means change value of both variable because of refrence
