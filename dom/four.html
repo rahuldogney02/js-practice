@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Practice</title>
+</head>
+<body style="background-color: #212122; color:#fff">
+    <ul class="language">
+        <li>JavaScript</li>
+        <li>Pyhton</li>
+        <li>Rubby</li>
+    </ul>    
+</body>
+<script>
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li); // here travercing all nodes
+    }
+    addLanguage("C++");
+    addLanguage("Java")
+
+    function addOptimLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName));
+        // const addText = document.createTextNode(langName);
+        // li.appendChild(addText); // ---- there is not refrence that's the reasion we not edit
+        document.querySelector('.language').appendChild(li); 
+    }
+    addOptimLanguage('goLang')
+
+
+    // Edit 
+    function editElement(langName){
+        const secondLang = document.querySelector('li:nth-child(2)');
+        secondLang.innerHTML = langName
+        const newLi = document.createElement('li');
+        newLi.textContent = langName;
+        secondLang.replaceWith(newLi);
+    }
+    editElement("Mojo-C##");
+
+    // 2nd way of Edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = `<li>Rahul</li>`;
+    // function AnotherWayElement(langName){
+    //     const forthhLang = document.querySelector('li:nth-child(4)')
+    //     forthhLang.outerHTML = 'langName'
+    // }
+    // AnotherWayElement(<li>Manas</li>);
+
+    // Remove
+    function removeElement(){
+        const forthEle = document.querySelector('li:nth-child(4)');
+        forthEle.remove();
+    }
+    removeElement();
+    
+</script>
+</html>
