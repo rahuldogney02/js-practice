@@ -3,7 +3,7 @@ function CombinationOFArray(element1,element2){
     // console.log(element1,element2);
     const bySpreadOperator = [...element1,...element2];
     // console.log(element1,element2);
-    return byConcatinateFun, bySpreadOperator;
+    return [byConcatinateFun, bySpreadOperator];
 }
 
 const element1 = ['India','Nepal','Bhutan','Lanka','Thiland'];
